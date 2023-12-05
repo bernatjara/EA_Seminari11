@@ -1,0 +1,28 @@
+// Authors
+GET http://localhost:9090/authors HTTP/1.1
+
+POST http://localhost:9090/authors HTTP/1.1 
+content-type: application/json
+
+{
+    "name": "Alejandro Dumas"
+}
+
+PUT http://localhost:9090/authors/65042c7263d97bd4cd3b9422 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Nombre Update"
+}
+
+DELETE http://localhost:9090/authors/650f2c1da65f433723766cd7 HTTP/1.1
+
+// Books
+POST http://localhost:9090/books HTTP/1.1 
+content-type: application/json
+
+{
+    "title": "Geronimo Stilton 3",
+    "category": "action",
+    "author": "650daecab1247f852087a997"
+}
